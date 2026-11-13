@@ -356,15 +356,19 @@ static void setScreen(Screen screen, GJGameLevel* level = nullptr) {
 // ---------------------------------------------------------------------------
 
 class $modify(PresencePlayLayer, PlayLayer) {
-    struct Fields {
-        bool lastPractice = false;
-    };
-
+#if GEODE_COMP_GD_VERSION >= 22091
+    bool init(GJGameLevel* level, bool dontCreateObjects) {
+        if (!PlayLayer::init(level, dontCreateObjects)) return false;
+        setScreen(Screen::Playing, level);
+        return true;
+    }
+#else
     bool init(GJGameLevel* level, bool useReplay, bool dontCreateObjects) {
         if (!PlayLayer::init(level, useReplay, dontCreateObjects)) return false;
         setScreen(Screen::Playing, level);
         return true;
     }
+#endif
 
     void resetLevel() {
         PlayLayer::resetLevel();
