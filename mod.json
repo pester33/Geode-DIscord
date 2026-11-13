@@ -5,10 +5,13 @@
 	},
 	"id": "pester.gd-discord-presence",
 	"name": "GD Discord Presence",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "Pester",
 	"description": "Shows the level you're playing on your Discord profile, with GD Gaming List ranks.",
-	"tags": ["online", "utility"],
+	"tags": [
+		"online",
+		"utility"
+	],
 	"settings": {
 		"enabled": {
 			"type": "bool",

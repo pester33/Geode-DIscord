@@ -23,7 +23,7 @@ using namespace geode::prelude;
 
 // Built-in Discord Application ID (the "Geometry Dash" app shown on profiles).
 // Players can override it in the mod settings.
-static constexpr auto DEFAULT_CLIENT_ID = "";
+static constexpr auto DEFAULT_CLIENT_ID = "1570850924069658797";
 
 // GD Gaming List data (backup copy kept up to date by the List-Mod repo)
 static constexpr auto GDGL_DATA_URL = "https://raw.githubusercontent.com/pester33/List-Mod/main/data/levels.json";
