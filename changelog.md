@@ -1,3 +1,6 @@
+# v1.0.2
+- GD 2.2091 version now uses the official Geode 6.0.0 (was the alpha)
+
 # v1.0.1
 - Built-in Discord Application ID, so it works without any setup
 
